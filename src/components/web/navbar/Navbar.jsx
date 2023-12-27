@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaHome, FaTh, FaShoppingCart, FaSearch } from 'react-icons/fa';
-import './Navbar.css';
+import styles from "./Navbar.css";
 import { UserContext } from '../context/UUser.jsx';
 import { CartContext } from '../context/Cart.jsx';
 
@@ -37,13 +37,13 @@ function Navbar() {
         >
           <span className="navbar-toggler-icon" />
         </button>
-        {/* Navbar Content */}
+      
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          {/* Logo */}
+         
           <Link className="navbar-brand" to="/">
             <span className="logo-text">Tshop</span>
           </Link>
-          {/* Left Side - Navigation Links */}
+          
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <Link className="nav-link" to="/">
@@ -69,7 +69,7 @@ function Navbar() {
               </li>
             ):null}
           </ul>
-          {/* Center - Search Bar */}
+          
           <form className="d-flex flex-grow-1">
             <input
               className="form-control me-2"
@@ -81,7 +81,6 @@ function Navbar() {
               <FaSearch />
             </button>
           </form>
-          {/* Right Side - User Account and Dropdown Menu */}
           <ul className="navbar-nav">
   <li className="nav-item dropdown">
     <a
