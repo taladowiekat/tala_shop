@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaHome, FaTh, FaShoppingCart, FaSearch } from 'react-icons/fa';
-import "./Navbar.css";
+import "./navbar.css";
 import { UserContext } from '../context/UUser.jsx';
 import { CartContext } from '../context/Cart.jsx';
 
